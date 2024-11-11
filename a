@@ -1,0 +1,15 @@
+cantidad = 4
+mayor = None
+sumatotal = 0
+for i in range(cantidad):
+    numeros = int(input("Ingrese el número  " +str(i) +"\n"));
+    numeros = float(numeros)
+
+    sumatotal = sumatotal + numeros
+
+    if mayor is None or numeros > mayor :
+        mayor = numeros
+promedio = sumatotal % cantidad   
+
+print("el número mayor es :" +str(mayor))
+print("el promedio total es :" + str(promedio))
